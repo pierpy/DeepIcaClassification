@@ -3,7 +3,7 @@ Convolutional Neural Netowork (CNN) for Independent Component Classificaiton
 
 (EEGLAB required)
 
-First you must format your data with the function [input_name, eeg] = formatdata( eeg )
+First you must format your data with the function: 
 
 - [ input_name, eeg ] = formatdata( eeg ) --> this function format and save the data as input for "classification()" function.
                   input: eeg --> struct with following required fields: 
@@ -13,8 +13,10 @@ First you must format your data with the function [input_name, eeg] = formatdata
                                   4. eeg.srate: sampling frequency; 
                                   5. eeg.filename: name to the CNN input file;
                   output: input_name --> string indicating the filename for the classification() function; 
-                          eeg        --> struct as input struct with new formatted variables
-                                  
+                          eeg        --> struct as input struct with new formatted variables.
+                          
+then you can perform the classification of the ICA components with the following function
+
 - [ probabilities ] = classification( input_name ) --> this function performs the CNN classification of the ICA components,                                                          takes as input the filename previously obtained by 
                                                        the function "[input_name, eeg] =formatdata( eeg )".
                   input: input_name --> string corresponding to the filename previously obtained by the function 
