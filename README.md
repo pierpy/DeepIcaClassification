@@ -17,10 +17,11 @@ First you must format your data with the function:
                   output: input_name --> string indicating the filename for the classification() function; 
                           eeg        --> struct as input struct with new formatted variables.
                           
-then you can perform the classification of the ICA components with the following function
+then you can perform the classification of the ICA components with the following function:
 
 - [ probabilities ] = classification( input_name ) --> this function performs the CNN classification of the ICA components,                                                          takes as input the filename previously obtained by 
                                                        the function "[input_name, eeg] =formatdata( eeg )".
+                                                       
                   input: input_name --> string corresponding to the filename previously obtained by the function 
                                         "[input_name, eeg] = formatdata( eeg )";
                   output: probabilities --> matrix [number of components x 2] with the probabilities for each IC of being                                             BRAIN ( firs column ) or ARTIFACT ( second column )
