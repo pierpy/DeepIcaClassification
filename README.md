@@ -3,6 +3,7 @@ Convolutional Neural Netowork (CNN) for Independent Component Classificaiton
 
 (EEGLAB required)
 
+Clone or download the repository, cd to the downloaded folder. 
 First you must format your data with the function: 
 
 - [ input_name, eeg ] = formatdata( eeg ) --> this function format and save the data as input for "classification()" function.
