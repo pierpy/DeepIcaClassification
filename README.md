@@ -24,7 +24,8 @@ then you can perform the classification of the ICA components with the following
                                                        
                   input: input_name --> string corresponding to the filename previously obtained by the function 
                                         "[input_name, eeg] = formatdata( eeg )";
-                  output: probabilities --> matrix [number of components x 2] with the probabilities for each IC of being                                             BRAIN ( firs column ) or ARTIFACT ( second column )
+                  output: probabilities --> matrix [number of components x 2] with the probabilities for each IC of bein BRAIN ( firs column ) or ARTIFACT ( second column )
+                  
                   
 See the file main.m to a complete use of the toolbox. The classification is perfomed through a pre-trained CNN (Croce et al., 2018) encapsulated in the file cnn.exe
 
